@@ -1,0 +1,25 @@
+{
+  "name": "e-commerce-web",
+  "version": "1.0.0",
+  "description": "Making a user friendly ecommerce web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suraj-harry/E-commerce-Web.git"
+  },
+  "keywords": [],
+  "author": "Suraj Gupta",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Suraj-harry/E-commerce-Web/issues"
+  },
+  "homepage": "https://github.com/Suraj-harry/E-commerce-Web#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^5.2.1"
+  }
+}
