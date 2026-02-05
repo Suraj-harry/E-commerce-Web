@@ -159,9 +159,16 @@ export const updateProductController = async (req, res) => {
       { new: true }
     );
     if (photo) {
-      products.photo.data = fs.readFileSync(photo.path);
-      products.photo.contentType = photo.type;
+      if(photo.size > 1000000) {
+        return res.status(500).send({
+        success: false,
+        message: "Image should be less than 1MB",
+      });
     }
+      product.photo.data = fs.readFileSync(photo.path);
+      product.photo.contentType = photo.type;
+    }
+
     await products.save();
     res.status(201).send({
       success: true,
