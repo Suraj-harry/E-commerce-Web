@@ -3,7 +3,7 @@ import Layout from "../../components/Layout/Layout";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import "../../style/AuthStyle.css";
+import "../../styles/AuthStyles.css";
 
 const ForgotPasssword = () => {
   const [email, setEmail] = useState("");
@@ -56,8 +56,8 @@ const ForgotPasssword = () => {
               value={answer}
               onChange={(e) => setAnswer(e.target.value)}
               className="form-control"
-              id="exampleInputAnswer1"
-              placeholder="Enter Your BestFrined Name "
+              id="exampleInputEmail1"
+              placeholder="Enter Your favorite Sport Name "
               required
             />
           </div>

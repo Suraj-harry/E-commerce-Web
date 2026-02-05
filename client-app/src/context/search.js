@@ -1,16 +1,14 @@
 import { useState, useContext, createContext } from "react";
-import axios from "axios";
 
 const SearchContext = createContext();
-
 const SearchProvider = ({ children }) => {
-  const [search, setSearch] = useState({
+  const [auth, setAuth] = useState({
     keyword: "",
     results: [],
   });
 
   return (
-    <SearchContext.Provider value={[search, setSearch]}>
+    <SearchContext.Provider value={[auth, setAuth]}>
       {children}
     </SearchContext.Provider>
   );

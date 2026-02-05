@@ -1,10 +1,9 @@
-
 import React, { useState } from "react";
-import Layout from "../../components/Layout/Layout";
+import Layout from "./../../components/Layout/Layout";
 import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
-import "../../style/AuthStyle.css";
+import "../../styles/AuthStyles.css";
 import { useAuth } from "../../context/auth";
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -68,11 +67,6 @@ const Login = () => {
             />
           </div>
           <div className="mb-3">
-          <button type="submit" className="btn btn-primary">
-            LOGIN
-          </button>
-          </div>
-          <div className="mb-3">
             <button
               type="button"
               className="btn btn-primary"
@@ -83,6 +77,10 @@ const Login = () => {
               Forgot Password
             </button>
           </div>
+
+          <button type="submit" className="btn btn-primary">
+            LOGIN
+          </button>
         </form>
       </div>
     </Layout>
